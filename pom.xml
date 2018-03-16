@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>me.zqliang</groupId>
-  <artifactId>zqliang-core</artifactId>
+  <artifactId>jee-core</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>zqliang-core</name>
+  <version>0.0.2-SNAPSHOT</version>
+  <name>jee-core</name>
 
   <build>  
     <plugins>  

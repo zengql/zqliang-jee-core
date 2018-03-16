@@ -1,23 +1,23 @@
-package com.zqliang.util;
+package me.zqliang.core.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * ÈÕÆÚÏà¹Ø¹¤¾ß
+ * æ—¥æœŸå¤„ç†ç±»
  * @author zqliang
  * @date 2017/05/14
  */
 public class DateUtil {
 	
 	/**
-	 * ¸ñÊ½»¯Ê±¼ä
+	 * ï¿½ï¿½Ê½ï¿½ï¿½Ê±ï¿½ï¿½
 	 * @param date
 	 * @param formatStr
 	 * @return
 	 */
 	static public final String format2String(Date date, String formatStr) {
-		if (null == date || StringUtil.isBlank(formatStr))
+		if (null == date || StringUtil.isEmpty(formatStr))
 			return StringUtil.EMPTY;
 		try {
 			SimpleDateFormat dateFormat = new SimpleDateFormat(formatStr);
@@ -30,11 +30,11 @@ public class DateUtil {
 	
 
 	/**
-	 * ¸ñÊ½»¯»¯Ê±¼ä
-	 * @param date ÈÕÆÚ
-	 * @param dateFormatType ±¾¹¤¾ßÀàÖĞµÄÒ»¸öÄÚ²¿Ã¶¾Ù 
-	 * @param dateSplit ÈÕÆÚ·Ö¸î·û
-	 * @param timeSplit Ê±¼ä·Ö¸î·û
+	 * æ ¼å¼åŒ–ä¸ºå­—ç¬¦ä¸²
+	 * @param date æ—¥æœŸå¯¹è±¡
+	 * @param dateFormatType æ ¼å¼åŒ–æšä¸¾å¯¹è±¡
+	 * @param dateSplit æ—¥æœŸåˆ†å‰²ç¬¦ é»˜è®¤-
+	 * @param timeSplit æ—¶é—´åˆ†å‰²ç¬¦ é»˜è®¤:
 	 * @return
 	 */
 	static public final String format2String(Date date, DateFormatType dateFormatType, String dateSplit, 
@@ -52,8 +52,8 @@ public class DateUtil {
 	}
 	
 	/**
-	 * ×Ô¶¨ÒåÊ±¼äÀàĞÍ<br>
-	 *  ·Ö¸ô·û¿É×ÔĞĞÌí¼Ó<br>
+	 *
+	 *  æ—¥æœŸæšä¸¾ï¼Œåˆ—ä¸¾äº†å¸¸ç”¨çš„æ ¼å¼<br>
 	 *
 	 * DATE 2017-05-14<br>
 	 * DATETIME 2017-05-14 14:40:12 <br>
@@ -71,14 +71,14 @@ public class DateUtil {
 		}
 		
 		/**
-		 * 
-		 * dateSplit ÈÕÆÚ·Ö¸ô·û£¨ Ä¬ÈÏ-£©
-		 * timeSplit Ê±¼ä·Ö¸î¸¶£¨ Ä¬ÈÏ£º£©
+		 *  è½¬æˆstring
+		 * dateSplit æ—¥æœŸåˆ†å‰²ç¬¦
+		 * timeSplit æ—¶é—´åˆ†éš”ç¬¦
 		 */
 		public String toString(String dateSplit, String timeSplit) {
-			if (StringUtil.isBlank(dateSplit))
+			if (StringUtil.isEmpty(dateSplit))
 				dateSplit = "-";
-			if (StringUtil.isBlank(timeSplit))
+			if (StringUtil.isEmpty(timeSplit))
 				timeSplit = ":";
 			value = this.value.replaceAll("@", dateSplit);
 			value = this.value.replaceAll("#", timeSplit);
