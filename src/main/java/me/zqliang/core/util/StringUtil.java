@@ -17,7 +17,7 @@ public class StringUtil {
 	 * null false
 	 * " " true
 	 * @since 1.0-SNAPSHOT
-	 * @param str �ַ���
+	 * @param str 需要转换的字符串
 	 * @return
 	 */
 	static public boolean isEmpty(String str) {

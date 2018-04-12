@@ -11,7 +11,7 @@ import java.util.Date;
 public class DateUtil {
 	
 	/**
-	 * ��ʽ��ʱ��
+	 * 日期格式化为字符串
 	 * @param date
 	 * @param formatStr
 	 * @return

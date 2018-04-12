@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>me.zqliang</groupId>
-  <artifactId>jee-core</artifactId>
+  <artifactId>core</artifactId>
   <packaging>jar</packaging>
   <version>0.0.2-SNAPSHOT</version>
   <name>jee-core</name>
